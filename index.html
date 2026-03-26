@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Secondary Survey Form</h1>
+    <p id="description">Please Take Your Time and Fill the Form Correctly</p>
+
+    <form id="survey-form">
+   <label id="name-label" for="name">Name:</label> 
+   <input id="name" type="text" name="name" required placeholder="George Eipa">  
+   <br>
+<label id="email-label" for="email">Email</label>
+<input type="email" id="email" name="email" required placeholder="Enter your email">
+  </br>
+
+  <label id="number-label" for="number">Age(optional)</label>
+  <input type="number" id="number" name="age" required placeholder="Age" min="10" max="100">
+
+     <label for="dropdown">Which syllabus best for you?</label>
+<select id="dropdown" name="role" required>
+ <option disabled selected value="">select your subject</option> 
+  <option value="Physics">Physics</option>
+  <option value="Chemistry">Chemistry</option>
+  <option value="Biology">Biology</option>
+  <option value="Maths">Maths</option>
+    <option value="Other">Other</option>
+</select>
+<p>Will you prefer science subjects over Language Subjects?</p>
+<label>
+  <input type="radio" name="user-recommend" value="definitely" checked>Definitely</label>
+
+    <input type="radio" name="user-recommend" value="maybe">Maybe</label>
+
+      <input type="radio" name="user-recommend" value="not-sure">Not sure</label>
+</label>
+
+<p>Whats your favorite overall subject of all the time?</p>
+<label>
+  <input type="checkbox" name="prefer" value="maths" checked>Maths
+
+  <input type="checkbox" name="prefer" value="biology">Biology
+
+  <input type="checkbox" name="prefer" value="chemistry">Chemistry
+
+  <input type="checkbox" name="prefer" value="physics">Physics
+
+  <input type="checkbox" name="prefer" value="english">English
+</label>
+<p>Any suggestion/Review?</p>
+<textarea id="comment" name="comment" placeholder="Enter your comment here..."></textarea>
+<button type="submit" id="submit">Submit</button>
+   </form>
+  </body>
+</html>
