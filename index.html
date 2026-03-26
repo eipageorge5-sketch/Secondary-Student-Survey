@@ -4,7 +4,107 @@
     <meta charset="UTF-8" />
     <title>Secondary Student Survey</title>
     <style>
-      
+     <style>
+  /* 1. Overall Page Setup */
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #2a5298 0%, #1e3a8a 100%);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 40px 10px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* 2. Title & Description */
+  #title {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin-bottom: 10px;
+  }
+
+  #description {
+    color: #e0e7ff;
+    font-style: italic;
+    margin-bottom: 30px;
+  }
+
+  /* 3. The Form Container */
+  #survey-form {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  }
+
+  /* 4. Labels and Inputs */
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+  }
+
+  input,
+  input[type="email"],
+  input[type="number"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Keeps everything aligned */
+  }
+
+  /* Highlight inputs when clicking them */
+  input:focus, select:focus, textarea:focus {
+    border-color: #2563eb;
+    outline: none;
+    box-shadow: 0 0 8px rgba(37, 99, 235, 0.2);
+  }
+
+  /* 5. Radio and Checkbox Groups */
+  /* This makes them stack vertically instead of bunching up */
+  input[type="radio"], 
+  input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2); /* Makes them easier to click */
+  }
+
+  /* 6. Textarea (The Review box) */
+  #comment {
+    height: 100px;
+    resize: vertical; /* Allows student to pull it down but not sideways */
+  }
+
+  /* 7. The Submit Button */
+  #submit {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #059669; /* Green color for 'Submit' */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background 0.3s ease;
+  }
+
+  #submit:hover {
+    background-color: #047857;
+    transform: translateY(-2px);
+  }
+</style> 
     </style>
   </head>
 
